@@ -1,19 +1,12 @@
-<<<<<<< HEAD
+## maven
 **/target/
 **/build/
 **/out
 
-#eclipse
+## eclipse
 **/.settings
 **/.classpath
 **/.project
-=======
-**/target/
-**/build/
-**/out
 
-#eclipse
-**/.settings
-**/.classpath
-**/.project
->>>>>>> refs/remotes/origin/main
+## node
+**/node_modules

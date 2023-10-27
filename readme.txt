@@ -17,3 +17,7 @@ kanbanboard
 emaillist
    |-- backend
    |-- frontend
+
+mysite07(guestbook, gallery)
+   |-- backend
+   |-- frontend
