@@ -1,7 +1,11 @@
 ex08: JSX tutorial
 01. 특징1: HTML과의 차이점
-02. 특징2: Single Root
-03. 특징3: JSX 표현식 표기법: { javascript expression }
+02. 특징2: Sigle Root
+03. 함수 컴포넌트
+04. Pure React(React API) 컴포넌트
+05. 클래스 컴포넌트
+06. 특징3: JSX 표현식 표기법: { javascript expression }
+07. Comment
 
 
 
