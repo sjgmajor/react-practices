@@ -1,13 +1,13 @@
 import React from 'react';
 
 function Clock01(props) {
-    let now = new Date();
-    let hours = now.getHours();
-    let minutes = now.getMinutes();
-    let seconds = now.getSeconds();
+    const now = new Date();
+    const hours = now.getHours();
+    const minutes = now.getMinutes();
+    const seconds = now.getSeconds();
 
     let session = 'AM';
-    if(hours > 12) {
+    if(hours >= 12) {
         session = 'PM';
     }
     if(hours< 10) {
