@@ -7,7 +7,6 @@ class FoodList extends Component {
     }
 
     render() {
-
         return (
             <ul>
                 {
@@ -15,7 +14,7 @@ class FoodList extends Component {
                         return <FoodListItem
                                     key={food.no}
                                     name={food.name}
-                                    count={food.count}/>
+                                    count={food.count} />;
                     })
                 }
             </ul>

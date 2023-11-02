@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './assets/scss/Email.scss'
+import styles from './assets/scss/Email.scss';
 
 function Email({firstName, lastName, email}) {
     return (

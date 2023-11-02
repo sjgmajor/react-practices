@@ -1,6 +1,6 @@
 @import 'Common.css';
 
-:global(.Header) {
+.Header {
     font-size: 14px;
     width: 420px;
     text-align: center;

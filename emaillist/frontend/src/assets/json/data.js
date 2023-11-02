@@ -23,4 +23,4 @@ export default [
         "lastName": "치",
         "email": "ddochi@gmail.com"
     }
-]
+];

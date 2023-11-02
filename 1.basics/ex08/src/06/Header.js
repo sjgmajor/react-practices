@@ -1,11 +1,9 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-class Header extends Component {
-    render() {
-        return (
-            <h2>06</h2>
-        );
-    }
+function Header(props) {
+    return (
+        <h1>06</h1>
+    );
 }
 
 export default Header;

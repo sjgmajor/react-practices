@@ -1,5 +1,4 @@
-
-====================================================================================
+Emaillist: Frontend
 
 1.  설치
     1)  개발툴
@@ -13,9 +12,9 @@
 
 3.  스트립팅
     "scripts": {
-        "debug": "npx webpack serve --config config/webpack.config.js --progress --mode development",
-        "build": "npx webpack --config config/webpack.config.js --mode production"
+        "debug": "npx webpack serve --progress",
+        "build": "npx webpack"
     }
 
 4.  테스트 서버 실행
-    $ npm run debug src=(01|02|03|04|...)
+    $ npm run debug

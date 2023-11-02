@@ -2,7 +2,7 @@ import React from 'react';
 
 function Header(props) {
     return (
-        <h2>03</h2>
+        <h1>03</h1>
     );
 }
 

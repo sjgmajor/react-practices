@@ -6,5 +6,5 @@ module.exports = {
     output: {
         path: path.resolve('public'),
         filename: 'assets/js/bundle.js'
-    }
+    }    
 }

@@ -10,7 +10,7 @@ $ npm i -D express webpack webpack-cli
   }
 
 3. 빌드
-$ npm run build
+$ npm run build  
 
-4.실행
+4. 실행
 $ npm start

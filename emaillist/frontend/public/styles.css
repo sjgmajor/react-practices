@@ -28,6 +28,8 @@ ul, ol {
     padding: 7px;
 }
 
+/* --- */
+
 .RegisterForm {
     width: 100%;
     height: 50px;
@@ -142,3 +144,4 @@ ul, ol {
     text-decoration: none;
     color: #fff;
 }
+

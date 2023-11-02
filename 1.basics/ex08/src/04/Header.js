@@ -2,7 +2,7 @@ import React from 'react';
 
 function Header(props) {
     // return (
-    //     <h2>04</h2>
+    //     <h1>04</h1>
     // );
     return React.createElement('h1', null, '04');
 }

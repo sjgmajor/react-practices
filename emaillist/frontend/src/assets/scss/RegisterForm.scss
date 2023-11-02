@@ -4,14 +4,17 @@
         height: 50px;
         position: relative;
 
-        input[type="text"],
-        input[type="submit"] {
+        input[type="text"], input[type="submit"] {
             display: block;
             position:absolute;
             outline: none;
             border: 1px solid #d9d9d9;
             padding: 3px;
             margin-bottom: 10px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #eee;
         }
 
         input[type="submit"] {
@@ -26,24 +29,20 @@
             cursor: pointer;
         }
 
-        input[type="submit"]:hover {
-            background-color: #eee;
-       }
-
-       .InputFirstName {
-        left: 0;
-        top: 0;
-        width:80px;
+        .InputFirstName {
+            left: 0;
+            top: 0;
+            width:80px;
         }
         .InputLastName {
-        top: 0;
-        left: 92px;
-        width: 145px;
+            top: 0;
+            left: 92px;
+            width: 145px;
         }
         .InputEmail {
-        left:0;
-        top: 27px;
-        width: 237px;
+            left:0;
+            top: 27px;
+            width: 237px;
         }
     }
 }

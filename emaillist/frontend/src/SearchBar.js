@@ -1,8 +1,8 @@
 import React from 'react';
-import styles from './assets/scss/SearchBar.scss'
+import styles from './assets/scss/SearchBar.scss';
 
 function SearchBar(props) {
-    return ( 
+    return (
         <div className={styles.Searchbar}>
             <input type='text' placeholder='찾기'/>
         </div>

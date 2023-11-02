@@ -1,5 +1,5 @@
-import './assets/scss/App.scss'
-import logo from './assets/images/logo.svg'
+import './assets/scss/App.scss';
+import logo from './assets/images/logo.svg';
 
 function App() {
     const App = document.createElement('div');

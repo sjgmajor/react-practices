@@ -1,4 +1,4 @@
-export default[
+export default [
   {
     "no": 1,
     "title": "DB Scheme Design",

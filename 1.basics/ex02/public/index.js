@@ -1,3 +1,3 @@
 document
     .getElementById('root')
-    .appendChild(App())
+    .appendChild(App());

@@ -6,9 +6,10 @@ function App() {
     // return (
     //     <div id='App'>
     //         <Header />
-    //         <Contents />
+    //         <Contents />            
     //     </div>
     // );
+
     return React.createElement('div', null, React.createElement(Header, null), React.createElement(Contents, null))
 }
 

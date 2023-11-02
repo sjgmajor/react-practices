@@ -5,7 +5,7 @@ function App() {
     return (
         <div id={'App'}>
             <h1 className={styles.Header}>CSS Module I</h1>
-        </div> 
+        </div>
     );
 }
 

@@ -1,5 +1,5 @@
 function App() {
     const App = document.createElement('div');
-    App.textContent = "Hello World";
+    App.textContent = "Hello Wolrd";
     return App;
 }

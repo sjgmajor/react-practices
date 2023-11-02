@@ -1,35 +1,39 @@
 import React from 'react';
+/*
+    리액트 컴포넌트는 단일 루트 노드만 렌더링 할 수 있다.
 
-const str = 'Hello World';
+    오류:
+    return (    
+        <h2>01</h2>
+        <p>특징2: Sigle Root</p>
+    )
+
+    이유:
+    1) transpile 오류
+    return (
+        React.createElement('h2', null, '01')
+        React.createElement('p', null, '특징2: Sigle Root')
+    );
+
+    2)
+    return (
+        <div>    
+            <h2>01</h2>
+            <p>특징2: Sigle Root</p>
+        </div>    
+    )
+    
+    return (
+        React.createElement('div', null, React.createElement('h2', null, '01'), React.createElement('p', null, '특징2: Sigle Root') )
+    );
+
+*/
+
 function App() {
-    // const App = document.createElement('div');
-    // App.textContent = "Hello World";
-    // const App = React.createElement('div', null, 'Hello World');
-    // return App;
     return (
         <div>
-            <h1>01</h1>
-            <p>특징1: HTML과의 차이점</p>
-            {/*
-                1. 속성은 Camel Case
-            */}
-            <input type='text' maxLength='10' />
-
-            {/*
-                2. Element 꼭 닫는다.
-            */}
-            <br/>
-            <hr/>
-            <img src=''/>
-
-            {/*
-                3. JSX Element의 속성 이름은 DOM API와 일치한다.
-                <h4 id='title' class='header'>타이틀</h4>
-                document.getElementById('title').className = 'header';
-            */}
-            <h4 id={'title'} className='header'>타이틀</h4>
-
-
+            <h1>02</h1>
+            <p>특징2: Sigle Root</p>
         </div>
     );
 }
