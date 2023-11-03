@@ -8,7 +8,7 @@ export default function () {
             <h2>ex04 - 기본 개념</h2>
             <Incrementor01 begin={1} step={1}/>
             <br/>
-            <Incrementor02 begin={10} step={1}/>
+            <Incrementor02 begin={10} step={10}/>
         </>
     );
 }
