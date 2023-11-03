@@ -3,9 +3,18 @@ ex05: Component Lifecycle
    1) Lifecycle I: mount
         1. constructor
         2. getDerivedStateFromProps
-        3. render
+        3. render ***
+        4. componentDidMount ***
+
    2) Lifecycle II: update
+        1. getDerivedStateFromProps
+        2. shouldComponentUpdate *
+        3. render ***
+        4. getSnapshotBeforeUpdate
+        5. componentDidUpdate ***
+
    3) Lifecycle III: unmount
+        1. componentWillUnmount ***
 
 02. Functional Component
 ====================================================================================

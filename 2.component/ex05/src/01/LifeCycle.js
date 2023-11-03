@@ -15,7 +15,7 @@ export default class LifeCircle extends Component {
      *
      *  props로 받아온 값을 state에 동기화 한다.[react v16.3]
      */
-    static (nextProps, prevState) {
+    static getDerivedStateFromProps(nextProps, prevState) {
         console.log(`[MOUNT02][UPDATE01]: getDerivedStateFromProps(nextProps=${nextProps.color}, prevState=${prevState.color})`);
         return nextProps.color !== prevState.color ? {color: nextProps.color} : null;
     }
