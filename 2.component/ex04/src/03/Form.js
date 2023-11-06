@@ -3,13 +3,23 @@ import './assets/Form.css';
 
 export default function Form() {
 
+    const onSubmit = (e) => {
+        e.preventDefault();
+
+        console.log(e.target.email.value, e.target.password.value);
+
+        // validation codes ...
+
+        // ajax 로그인
+    };
 
     return (
         <form
             id="loginForm"
             name="loginForm"
             method="post"
-            action="/do/not/post">
+            action="/do/not/post"
+            onSubmit={onSubmit}>
             <label htmlFor="email">이메일</label>
             <input
                 id="email"

@@ -13,12 +13,14 @@ export default function App() {
                 색상변경
             </button>
             <br/>
-            <input type='checkbox' checked={show} onChange={ e => setShow(!show)} /> 컴포넌트 보기
+            <input type='checkbox' checked={show} onChange={e => setShow(!show)}/> 컴포넌트 보기
             {
-                show ?
-                 <LifeCycle color={color} />:
-                 null
+                show ? 
+                    <LifeCycle color={color}/>:
+                    null
+
+
             }
         </Fragment>
-     );
+    );
 }

@@ -5,7 +5,12 @@ import './assets/scss/Clock.scss';
 
 export default function Clock({message, hours, minutes, seconds}) {
 
-
+    useEffect(() => {
+        console.log("clock: componentDidMount");
+        return () => {
+            console.log("clock: componentWillUnmount");
+        }
+    }, []);
 
     return (
         <div className={'clock-display'}>
@@ -14,7 +19,7 @@ export default function Clock({message, hours, minutes, seconds}) {
                 <SevenSegmentLED number={hours} colon={true}/>
                 <SevenSegmentLED number={minutes} colon={true}/>
                 <SevenSegmentLED number={seconds} colon={false}/>
-                <SessionAmPm session={hours > 12 ? 'pm' : 'am'}/>
+                <SessionAmPm session={parseInt(hours) > 12 ? 'pm' : 'am'}/>
             </div>
         </div>
     );
