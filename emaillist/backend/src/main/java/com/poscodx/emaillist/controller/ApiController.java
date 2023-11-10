@@ -23,8 +23,10 @@ public class ApiController {
 	
 	@GetMapping("/api")
 	public ResponseEntity<JsonResult> read(
-			@RequestParam(value="kw", required = true, defaultValue="") String keyword) {
-		log.info("Request[GET /api]");
+			@RequestParam(value="kw", required=true, defaultValue="") String keyword) {
+		
+		log.info("Request[GET /api]:"+ keyword);
+		
 		return ResponseEntity
 				.status(HttpStatus.OK)
 				.body(JsonResult.success(emaillistRepository.findAll(keyword)));

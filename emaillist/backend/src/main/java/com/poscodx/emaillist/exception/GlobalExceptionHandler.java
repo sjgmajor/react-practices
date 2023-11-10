@@ -19,18 +19,19 @@ import lombok.extern.slf4j.Slf4j;
 public class GlobalExceptionHandler {
 	@ResponseBody
 	@ExceptionHandler(Exception.class)
-	public ResponseEntity<JsonResult> handlerException(Exception e){
+	public ResponseEntity<JsonResult> handlerException(Exception e) {
+		
 		// 로깅(Logging)
 		StringWriter errors = new StringWriter();
 		e.printStackTrace(new PrintWriter(errors));
 		log.error(errors.toString());
-		
-		// 응답
-			JsonResult jsonResult = 
-				(e instanceof NoHandlerFoundException) ?	
-					JsonResult.fail("Unknown request") :
-					JsonResult.fail(errors.toString());
 
+		// 응답
+		JsonResult jsonResult =
+				(e instanceof NoHandlerFoundException) ?
+						JsonResult.fail("Unknown Request") :
+						JsonResult.fail(errors.toString());
+		
 		return ResponseEntity
 				.status(HttpStatus.OK)
 				.body(jsonResult);
