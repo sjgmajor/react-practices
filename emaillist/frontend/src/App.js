@@ -6,6 +6,7 @@ import Emaillist from './Emaillist';
 // import data from './assets/json/data';
 
 function App() {
+    console.log('안녕!');
     const [emails, setEmails] = useState(null);
 
     const addEmail = async (email) => {
@@ -56,7 +57,6 @@ function App() {
                 throw new Error(`${json.result} ${json.message}`)
             }
 
-            console.log(json.data);
             setEmails(json.data);
         } catch(err) {
             console.error(err);

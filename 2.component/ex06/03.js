@@ -5,5 +5,12 @@ let state = {
 };
 
 const updateOrder = Object.assign({}, state.order, {
-    eceive: "강남구 서초구..."
+    receive: '강남구 논현동'
 });
+
+updateOrder.payment.method = "Mobile";
+
+console.log(
+    state.order,
+    updateOrder
+)

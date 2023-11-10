@@ -1,7 +1,7 @@
 import fs from 'fs';
 import update from 'react-addons-update';
 
-let state={
+let state = {
     order: JSON.parse(fs.readFileSync('./json/data.json', 'utf-8'))
 };
 
@@ -11,19 +11,19 @@ const updateOrder = update(state.order, {
         $set: '강남구 논현동'
     },
     // nest 객체 프로퍼티 변경
-    payment:{
+    payment: {
         method: {
             $set: 'Mobile'
         }
     },
-    // 배열 요소 객체 프로퍼티 변경
-    products :{
+    products: {
+        // 배열 요소 객체 프로퍼티 변경
         0: {
-            amount: {
-                $set: 200
-            }
+           amount: {
+                $set: 200 
+           } 
         },
-
+    
         // 배열요소 추가
         $push: [{
             no: "s002-002",
@@ -32,6 +32,7 @@ const updateOrder = update(state.order, {
             amount: 10
         }]
     }
+    
 });
 
 console.log(updateOrder, state.order);
